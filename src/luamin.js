@@ -4198,8 +4198,6 @@ function BeautifyVariables(globalScope, rootScope, renameGlobals) {
 }
 
 
-let watermark = `--discord.gg/boronide, code generated using luamin.js™\n\n`
-
 let luaminp = {}
 
 luaminp.Minify = function(scr, options) {
@@ -4218,7 +4216,7 @@ luaminp.Minify = function(scr, options) {
     StripAst(ast)
 
     let result = PrintAst(ast)
-    result = `${watermark}\n\n${result}`
+    result = `${result}`
 
     return result
 }
@@ -4237,7 +4235,7 @@ luaminp.Beautify = function(scr, options) {
     FormatAst(ast)
 
     let result = PrintAst(ast)
-    result = `${watermark}\n\n${result}`
+    result = `${result}`
 
     return result
 }
