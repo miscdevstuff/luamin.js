@@ -4215,10 +4215,10 @@ luaminp.Minify = function(scr, options) {
 
     StripAst(ast)
 
-    let result = PrintAst(ast)
-    result = `${result}`
+    /*let result = PrintAst(ast)
+    result = `${result}`*/
 
-    return result
+    return PrintAst(ast)
 }
 
 luaminp.Beautify = function(scr, options) {
@@ -4234,10 +4234,10 @@ luaminp.Beautify = function(scr, options) {
 
     FormatAst(ast)
 
-    let result = PrintAst(ast)
-    result = `${result}`
+    /*let result = PrintAst(ast)
+    result = `${result}`*/
 
-    return result
+    return PrintAst(ast)
 }
 
 
